@@ -22,6 +22,7 @@ error.setAttribute('hidden', true)
 function changeCat(event) {
     info.setAttribute('hidden', true)
     loader.removeAttribute('hidden')
+    selector.setAttribute('hidden', true)
     fetchCatByBreed(event.target.value)
         .then(data => {
             info.removeAttribute('hidden')
